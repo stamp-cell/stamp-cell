@@ -1,0 +1,19 @@
+import os
+import shutil
+import re
+cwd = os.getcwd()
+print(cwd)
+###### If Possible Add a schematic of all then ask which one, like png vwesion of just schematic configuration.
+model = raw_input('Enter Cotransporter Type:\n symporter = sym \n antiporter = anti \n ')
+
+if(str(model) != ('anti'and 'sym')):
+	print('Invalid Answer. Exiting the program.')
+if (str(model) == 'sym'):
+	outmodel1 = raw_input('Choose symporter model type:\n slippage = Slp \n TwoStatesAFirst = AFirst \n TwoStatesBFirst = BFirst \n ABAC_ordered = ABAC \n ABCB_ordered = ABCB \n TwoSolutesAndCompetitor = Compete \n SimplifiedModel = Simple \n' )
+	print('The Symporter ' + str(outmodel1) + ' model is chosen')
+	os.system('python ' + 'Sym' + str(outmodel1) + '.py')
+if (str(model) == 'anti'):
+	outmodel2 = raw_input('Choose antiporter model type:\n SixState = SixState \n EightState = EightState \n TwoSolutesAndCompetitor= Compete \n ' )
+	print('The Antiporter ' + str(outmodel2) + ' model is chosen')
+	os.system('python ' + 'Anti' + str(outmodel2) + '.py')
+
