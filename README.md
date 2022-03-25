@@ -5,7 +5,7 @@
  
 STAMP can be used for two different types of studies:
 
-  1. **stamp_general**.py version provides different types of models for general membrane transporters (e.g., symporters slippage, symporters simplified model, antiporters simplified, etc.)[A comprehensive approach to the mathematical modeling of mass transport in biological systems: Fundamental concepts and models](https://www.sciencedirect.com/science/article/abs/pii/S0017931019365603) and
+  1. **stamp_general**.py version provides different types of models for general membrane transporters (e.g., symporters slippage, symporters simplified model, antiporters simplified, etc.) discussed in [A comprehensive approach to the mathematical modeling of mass transport in biological systems: Fundamental concepts and models](https://www.sciencedirect.com/science/article/abs/pii/S0017931019365603) and
   2. **stamp_specific**.py version includes the models for the specific type of each membrane transporter and ion channels specified in [A mathematical modeling toolbox for ion channels and transporters across cell membranes](https://www.sciencedirect.com/science/article/abs/pii/S0017931021005263) (e.g., sodium chloride cotransporters, sodium-potassium ATPase pumps, etc.). Both general and specific stamps follow the same steps.
   
   
